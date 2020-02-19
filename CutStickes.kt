@@ -16,7 +16,7 @@ import kotlin.jvm.internal.*
 import kotlin.ranges.*
 import kotlin.sequences.*
 import kotlin.text.*
-
+//https://www.hackerrank.com/challenges/cut-the-sticks/problem?h_r=next-challenge&h_v=zen
 // Complete the cutTheSticks function below.
 fun cutTheSticks(arr: Array<Int>): Array<Int> {
     var inputs = arr.toCollection(ArrayList())
