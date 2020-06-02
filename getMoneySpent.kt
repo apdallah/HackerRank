@@ -11,14 +11,14 @@ fun getMoneySpent(keyboards: Array<Int>, drives: Array<Int>, b: Int): Int {
     var result=-1
     var currentMax=0
 
-            keyboards.forEach { keyboard->
-                drives.forEach { 
-                    currentMax=it+keyboard
-                    if(currentMax<=b){
-                      result=currentMax  
-                    }
-                 }
-             }
+        keyboards.forEach { keyboard->
+            drives.forEach { 
+                currentMax=it+keyboard
+                if(currentMax<=b && currentMax>result){
+                    result=currentMax  
+                }
+            }
+        }
     return result
 }
 
